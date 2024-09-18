@@ -597,7 +597,7 @@ picture{
     color: #f00;
 }
 .wpcf7 form.wpcf7-form .wpcf7-response-output{
-    margin: 60px auto; /*元のスタイル優先になっていたので仕方なく !important*/
+    margin: 60px auto; /*解像度あげて優先度UP、importantなしでもいけた。元のスタイル優先になっていたので仕方なく !important*/
     max-width: 850px;
     text-align: center;
 }
