@@ -31,7 +31,7 @@ body{
 header
 */
 .header{
-    margin-top: 32px; /*管理者バーにかぶる分下げた、けどなんで？*/
+    /*margin-top: 32px; 管理者バーにかぶる分下げた、けどなんで？*/
     height: 90px;
     width: 100vw;
     position: fixed; /*宙に浮いた状態になってしまう、ツールバー含めて*/
@@ -584,10 +584,12 @@ picture{
     font-weight: bold;
 }
 .ContactForm7-contact input:focus{
-    border: 1px #DDDDDD solid; /*効かない*/
+    border: 1px #DDDDDD solid; /*utline:0;追加で効いた！*/
+    outline: 0; /* noneでもOK */
 }
-.ContactForm7-contact textarea:active{
-    border: solid 1px #DDDDDD; /*効かない .ContactForm7-contact */
+.ContactForm7-contact textarea:focus{
+    border: solid 1px #DDDDDD; /*outline:0;追加で効いた！ */
+    outline: 0; /* noneでもOK */
 }
 
 /* 送信時のメッセージ エラー文 / 送信完了文 */
@@ -743,7 +745,7 @@ picture{
     }
     .header{
         height: 70px;
-        margin-top: 32px; /*管理者バーにかぶる分下げたけど、スマホだと上空くから戻した、なんで？*/
+        /*margin-top: 32px; 管理者バーにかぶる分下げたけど、スマホだと上空くから戻した、なんで？*/
     }
     /* header */
     .logo a h1{
@@ -795,6 +797,24 @@ picture{
     .greeting-img img{
         width: 90%;
         height: auto;
+    }
+
+    /*detail*/
+    .detail-item{
+        width: 150px;
+        height: 150px;
+        margin: min(3.0vw, 11px);
+    }
+    .detail-title{
+        height: 40%;
+        margin-top: 10px;
+    }
+    .detail-title p{
+        font-size: min(5.0vw,20px);
+    }
+    .detail-icon{
+        width: 70px;
+        height: 70px;
     }
 
     /* news */
