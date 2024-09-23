@@ -214,7 +214,7 @@ footer{
 /* fv */
 .fv {
     position: relative;
-    font-size: 0;
+    /*vertical-align: bottom; /* 下側の余白を消す */
 }
 .fv h2 {
     position: absolute;
@@ -510,87 +510,7 @@ picture{
     width: 50px; /* 線の長さ */
 }
 
-/* お問い合わせページ */
-.ContactForm7-contact {
-    margin: 60px auto;
-    max-width: 850px;
-    padding:0 max(2.8vw,10px); 
-}
-.ContactForm7-contact__wrp{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-.ContactForm7-contact__title {
-    text-align: center;
-    font-size: 1.6rem;
-    font-weight: bold;
-    margin-bottom: 40px;
-}
-.ContactForm7-contact__label {
-    font-weight: bold;
-    width: 30%;
-}
-.ContactForm7-contact__label span {
-    font-weight: bold;
-    color: #fff;
-    background-color: #f00;
-    padding: 0 10px;
-    margin: 0 5px;
-    font-size: 0.6rem;
-}
-.ContactForm7-contact input[type="radio"]{
-    margin: 20px 0;
-}
-.ContactForm7-contact input[type="text"],
-.ContactForm7-contact input[type="tel"],
-.ContactForm7-contact input[type="email"],
-.ContactForm7-contact textarea {
-    width: max(30vw,500px);
-    border: none;
-    border: solid 1px #F2858F;
-    border-radius: 5px;
-    padding: 15px;
-    margin: 20px auto;
-}
-.ContactForm7-contact select,
-.ContactForm7-contact input[type="date"]{
-    width: max(15vw,300px);
-    border: none;
-    border: solid 1px #F2858F;
-    border-radius: 5px;
-    padding: 15px;
-    margin: 20px auto;
-}
-.ContactForm7-contact textarea {
-    height: 30vh;
-}
-.ContactForm7-contact__submit {
-    text-align: center;
-    max-width: 380px;
-    margin: 0 auto;
-}
-.ContactForm7-contact input[type="submit"] {
-    margin: 50px auto 0;
-    width: 200px;
-    height: 50px;
-    border-radius: 9999px;
-    background-color: #F2858F;
-    border: solid 1px #F2858F;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #ffffff;
-    font-weight: bold;
-}
-.ContactForm7-contact input:focus{
-    border: 1px #DDDDDD solid; /*utline:0;追加で効いた！*/
-    outline: 0; /* noneでもOK */
-}
-.ContactForm7-contact textarea:focus{
-    border: solid 1px #DDDDDD; /*outline:0;追加で効いた！ */
-    outline: 0; /* noneでもOK */
-}
+
 
 /* 送信時のメッセージ エラー文 / 送信完了文 */
 .wpcf7-not-valid-tip{

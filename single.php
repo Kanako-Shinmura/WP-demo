@@ -1,9 +1,5 @@
 <?php get_header(); ?>
-<?php
-if (have_posts()) :
-    while (have_posts()) :
-        the_post();
-?>
+
 <!-- 記事ヘッダー -->
 <div class="page-parts__header">
     <!-- 画像 -->
@@ -18,6 +14,12 @@ if (have_posts()) :
         <h2>お知らせ</h2>
     </div>
 </div>
+
+<?php
+if (have_posts()) :
+    while (have_posts()) :
+        the_post();
+?>
 
 <!-- 本文 -->
 <div class="single-news">

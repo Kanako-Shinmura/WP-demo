@@ -90,7 +90,7 @@
             <h3 class="section-title">お知らせ</h3>
             <div class="news">
             <?php
-            query_posts('posts_per_page=3'); // 表示する投稿数を指定
+            //query_posts('posts_per_page=3'); // 表示する投稿数を指定　→非推奨の関数、functions.phpに記載
             if( have_posts() ):
                 while( have_posts() ) : the_post(); ?>
                     <article class="news-wrapper">

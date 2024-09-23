@@ -1,7 +1,7 @@
 // ボタン、メニュー、モーダル要素の取得
-var btn = document.getElementById("btn");
-var menu = document.getElementById("menu");
-var modal = document.getElementById("modal");
+let btn = document.getElementById("btn");
+let menu = document.getElementById("menu");
+let modal = document.getElementById("modal");
     
 // ボタンがクリックされたらclassを追加
 btn.addEventListener("click",function(){
